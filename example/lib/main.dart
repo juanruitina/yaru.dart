@@ -9,8 +9,11 @@ import 'theme.dart';
 
 Future<void> main() async {
   await YaruWindowTitleBar.ensureInitialized();
-
   registerService<Connectivity>(Connectivity.new);
+  
+  WidgetsFlutterBinding.ensureInitialized(); // required to support SemanticsBinding
+  SemanticsBinding.instance.ensureSemantics(); // add this line to render webelements for UI readers/automation
+
   runApp(
     InheritedYaruVariant(
       child: const Home(),
