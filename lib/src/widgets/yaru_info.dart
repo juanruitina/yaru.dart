@@ -138,7 +138,7 @@ class YaruInfoBox extends StatelessWidget {
   /// `Theme.of(context).textTheme.labelLarge`
   final TextStyle? titleTextStyle;
 
-  /// The optional style used for the [DefaultTextStyle] around the subtitle, defaults to
+  /// The optional style used for the [DefaultTextStyle] around the [subtitle], defaults to
   /// `Theme.of(context).textTheme.bodySmall`
   final TextStyle? subTitleTextStyle;
 
