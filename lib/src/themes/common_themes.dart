@@ -49,7 +49,7 @@ InputDecorationTheme _createInputDecorationTheme(ColorScheme colorScheme) {
       : colorScheme.outline;
   final disabledBorder = border.withValues(alpha: 0.6);
 
-  const textStyle = TextStyle(fontSize: 14, fontWeight: FontWeight.normal);
+  const textStyle = TextStyle(fontSize: 14.66, fontWeight: FontWeight.normal);
 
   return InputDecorationTheme(
     filled: true,
