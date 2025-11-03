@@ -755,7 +755,7 @@ ThemeData createYaruTheme({
     menuTheme: _createMenuTheme(colorScheme),
     popupMenuTheme: _createPopupMenuTheme(colorScheme),
     tooltipTheme: _tooltipThemeData,
-    bottomAppBarTheme: BottomAppBarThemeData(color: colorScheme.surface),
+  bottomAppBarTheme: BottomAppBarTheme(color: colorScheme.surface),
     navigationBarTheme: _createNavigationBarTheme(colorScheme),
     navigationRailTheme: _createNavigationRailTheme(colorScheme),
     dividerTheme: DividerThemeData(
