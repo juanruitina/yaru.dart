@@ -102,7 +102,7 @@ class YaruTile extends StatelessWidget {
   }
 
   TextStyle _titleTextStyle(BuildContext context) {
-    return Theme.of(context).textTheme.bodyLarge!;
+    return Theme.of(context).textTheme.bodyMedium!;
   }
 
   TextStyle _subtitleTextStyle(BuildContext context) {

@@ -135,7 +135,7 @@ class YaruInfoBox extends StatelessWidget {
   final Color? color;
 
   /// The optional style used for the [DefaultTextStyle] around the [title], defaults to
-  /// `Theme.of(context).textTheme.headlineSmall?.copyWith(fontWeight: FontWeight.bold, fontSize: 16.0, height: 1.3)`
+  /// `Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold)`
   final TextStyle? titleTextStyle;
 
   /// The optional style used for the [DefaultTextStyle] around the [title], defaults to
@@ -167,15 +167,12 @@ class YaruInfoBox extends StatelessWidget {
                   ? DefaultTextStyle.merge(
                       style:
                           titleTextStyle ??
-                          theme.textTheme.headlineSmall?.copyWith(
+                          theme.textTheme.bodyMedium?.copyWith(
                             fontWeight: FontWeight.bold,
-                            fontSize: 16.0,
-                            height: 1.3,
                           ) ??
                           TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 16.0,
-                            height: 1.3,
+                            fontSize: 14.66,
                             color: theme.colorScheme.onSurface,
                           ),
                       child: title!,
