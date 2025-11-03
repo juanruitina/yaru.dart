@@ -71,7 +71,7 @@ class YaruInfoBadge extends StatelessWidget {
         child: DefaultTextStyle.merge(
           style:
               style ??
-              theme.textTheme.bodySmall ??
+              theme.textTheme.labelMedium ??
               const TextStyle(fontSize: 12, fontWeight: FontWeight.normal),
           child: title,
         ),
@@ -135,11 +135,11 @@ class YaruInfoBox extends StatelessWidget {
   final Color? color;
 
   /// The optional style used for the [DefaultTextStyle] around the [title], defaults to
-  /// `Theme.of(context).textTheme.bodyMedium?.copyWith(fontWeight: FontWeight.bold)`
+  /// `Theme.of(context).textTheme.labelLarge`
   final TextStyle? titleTextStyle;
 
-  /// The optional style used for the [DefaultTextStyle] around the [title], defaults to
-  /// `Theme.of(context).textTheme.bodyMedium`
+  /// The optional style used for the [DefaultTextStyle] around the subtitle, defaults to
+  /// `Theme.of(context).textTheme.bodySmall`
   final TextStyle? subTitleTextStyle;
 
   @override
@@ -167,13 +167,10 @@ class YaruInfoBox extends StatelessWidget {
                   ? DefaultTextStyle.merge(
                       style:
                           titleTextStyle ??
-                          theme.textTheme.bodyMedium?.copyWith(
-                            fontWeight: FontWeight.bold,
-                          ) ??
-                          TextStyle(
-                            fontWeight: FontWeight.bold,
+                          theme.textTheme.labelLarge ??
+                          const TextStyle(
                             fontSize: 14.66,
-                            color: theme.colorScheme.onSurface,
+                            fontWeight: FontWeight.w500,
                           ),
                       child: title!,
                     )
@@ -183,11 +180,10 @@ class YaruInfoBox extends StatelessWidget {
                   DefaultTextStyle.merge(
                     style:
                         subTitleTextStyle ??
-                        theme.textTheme.bodyMedium ??
-                        TextStyle(
-                          fontSize: 14,
+                        theme.textTheme.bodySmall ??
+                        const TextStyle(
+                          fontSize: 12,
                           fontWeight: FontWeight.normal,
-                          color: theme.colorScheme.onSurface,
                         ),
                     child: subtitle!,
                   ),
